@@ -108,4 +108,20 @@ public :
 
     }
 
+    void preorder(Node *ptr)
+    {
+        if (isEmpaty())
+        {
+            cout << "Tree is empaty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+        return;
+
+        preorder(ptr->leftchild);
+        cout << ptr->info << " ";
+        preorder(ptr->righchild);
+
+    }
     
+   
