@@ -38,4 +38,8 @@ public :
         //step 2 : assign value to the data field of new node 
         newNode->info = x;
 
-        
+        //step 3: make the left and right child of the new node point to NULL
+        newNode->leftchild = nullptr;
+        newNode->righchild = nullptr;
+
+       
