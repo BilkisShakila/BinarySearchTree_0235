@@ -42,4 +42,9 @@ public :
         newNode->leftchild = nullptr;
         newNode->righchild = nullptr;
 
-       
+        //step 4: locate the node whice will be the parent 
+        Node *parent = nullptr;
+        Node *currentNode = nullptr;
+        search(x, parent, currentNode);
+
+        
