@@ -47,4 +47,14 @@ public :
         Node *currentNode = nullptr;
         search(x, parent, currentNode);
 
+        //step 5:  if parent is NULL (tree is empaty)
+        if (parent == nullptr)
+        {
+            //sa: mark the node as ROOT 
+            ROOT = newNode;
+
+            //5b : exit
+            return;
+        }
+
         
