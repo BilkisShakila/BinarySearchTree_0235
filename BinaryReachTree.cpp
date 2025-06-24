@@ -140,4 +140,11 @@ public :
 
     }
 
+    bool isEmpaty()
+    {
+        //check if the tree is empaty
+        return ROOT == nullptr;
+    }
     
+};
+
