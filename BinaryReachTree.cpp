@@ -124,4 +124,20 @@ public :
 
     }
     
-   
+    void postorder(Node *ptr)
+    {
+        if (isEmpaty())
+        {
+            cout << "Tree is empaty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+        return;
+
+        postorder(ptr->leftchild);
+        cout << ptr->info << " ";
+        postorder(ptr->righchild);
+
+    }
+
+    
