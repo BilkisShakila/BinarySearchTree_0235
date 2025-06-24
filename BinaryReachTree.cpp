@@ -92,4 +92,20 @@ public :
         }
     }
     
+    void inorder(Node *ptr)
+    {
+        if (isEmpaty())
+        {
+            cout << "Tree is empaty" << endl;
+            return;
+        }
+        if (ptr == nullptr)
+        return;
+
+        inorder(ptr->leftchild);
+        cout << ptr->info << " ";
+        inorder(ptr->righchild);
+
+    }
+
     
