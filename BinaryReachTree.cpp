@@ -77,4 +77,19 @@ public :
         }
     }
 
+    void search(int element, Node *&parent, Node *&currentNode)
+    {
+        // this functional seacrhes the currentnode of the specifield node as well as the current Node of this its parent
+        currentNode = ROOT;
+        parent = nullptr;
+        while((currentNode != nullptr) && (currentNode->info != element))
+        {
+            parent = currentNode;
+            if (element < currentNode->info)
+                currentNode = currentNode->leftchild;
+            else
+                currentNode = currentNode->righchild;
+        }
+    }
+    
     
